@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Para Mi Andreita</strong>
+                        <p>
+                            Desde que te conocí,
+                            cada momento a tu lado se ha convertido en mi parte favorita del día,
+                            aunque eres un poco lokita jsjsjs
+                        </p>
+                        <img src="https://scontent.flim32-1.fna.fbcdn.net/v/t39.30808-1/406802589_657312986602475_2708446220707149635_n.jpg?stp=dst-jpg_s200x200&_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF1GtOgj4ErIWylgPwimwZsScWTGnoYYzhJxZMaehhjOKkWa4vUYl24B0X0jnXPy0wbr-xPnH9VtzKGg-p-75rn&_nc_ohc=SThoh4HAN2IQ7kNvgGI4bo-&_nc_ht=scontent.flim32-1.fna&oh=00_AYBbX7j1y0eRNqyE4MhpVPiZL3Ou0iBNoZBDVVxWSotc9A&oe=6659A2BB" alt="" style="width: 100px; height: 100px; align-items: center;">
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
